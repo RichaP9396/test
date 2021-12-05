@@ -1,6 +1,6 @@
 # PROJECT TITLE
 # COMPARISON OF MACHINE LEARNING MODELS FOR THE PREDICTION OF CERVICAL CANCER
-# # INTRODUCTION:
+## INTRODUCTION:
 According to WHO, Cervical cancer is the fourth most common cancer in women with an estimated
 604,000 new cases and 342,000 deaths worldwide in 2020. Based on NIH statistics the rate of 
 new cases of cervical cancer was 7.5 per 100,000 women per year and the death rate was 
@@ -16,10 +16,10 @@ Cigarette smoking, contraceptives using, multiple pregnancies and some other fac
 cervical cancer as well. The symptom-less nature of the cervical cancer has become challenging 
 for the researchers and practitioners to predict the disease at early stage which is why its 
 diagnosis at its early stages with ML models is very important to improve its cure and survival ratios.
-# # STATEMENT OF PURPOSE:
+## STATEMENT OF PURPOSE:
 Comparing three different machine learning algorithms capable of diagnosing cervical cancer 
 with high accuracy and sensitivity.
-# # APPROACH:
+## APPROACH:
 ### GET DATA:
 **Loading the data:**
 The data is downloaded from Cervical cancer dataset from UCI ML repository 
@@ -31,6 +31,7 @@ to answer some of the questions because of privacy concerns.
 **Source:Creators of database:**
 S.E. Golovenkin, V.A. Shulman, D.A. Rossiev, P.A. Shesternya, S.Yu. Nikulina, Yu.V. Orlova: Professor V.F. Voino-Yasenetsky Krasnoyarsk State Medical University;
 A.N. Gorban, E.M. Mirkes: University of Leicester.
+
 Database donator:
 E.M. Mirkes, School of Mathematics and Actuarial science, University of Leicester, Leicester, LE1 7RH, UK, em322 '@' le.ac.uk
 ### DATA CLEANING & EDA:
@@ -41,6 +42,7 @@ have missing values for over 90% of the records.
 **Imputation of missing values:** 
 Mean imputation (replacing the missing values of a certain variable 
 by the mean of non-missing cases of that variable) was performed to replace the missing values.
+
 Identify the collinearity factors using correlation matrix: Plot the correlation matrix as heatmap 
 to show the correlation values of the variables in the dataset.  Also, plot heatmap of correlation 
 matrix of the top 12 factors to the target variable (Biopsy).
@@ -51,6 +53,7 @@ check for the target variable (biopsy) imbalance.
 
 **PCA analysis to extract highly correlated risk factors:**
 Perform PCA analysis over the dataset and selected the number of PCs that explain almost the 95% of the variance. 
+
 Also, get the most important features on the PCs with names and save them into a pandas dataframe.
 ### TRAIN MODELS:
 **Train and Test sets:**
