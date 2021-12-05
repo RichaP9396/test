@@ -94,6 +94,8 @@ with high accuracy & sensitivity
 # CONCLUSION
 The Custom Ensemble model with SMOTE correctly predicts the incidence of the cervical cancer
 with high accuracy & sensitivity.
+
 The Logistic Regression model with SMOTE correctly predicts the incidence of the cervical cancer
 with high accuracy and sensitivity.
+
 Which model has best result?
