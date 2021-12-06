@@ -83,10 +83,14 @@ Compare the predictive models for each ML models based on evaluation metrics
 Compare all the 3 ML models to see which models correctly predicts the incidence of the disease 
 with high accuracy & sensitivity
 # RESULTS
+
 ### Super learner Ensemble method (Base learners:Decision Tree & Bagging & XGBoost as meta learner)
-1. Model without PCA & SMOTE - Accuracy of 96% and AUC-ROC score of 0.93
-2. Model with PCA only - Accuracy of 96% and AUC-ROC score of 0.82
-3. Model with SMOTE only -Accuracy of 97% and AUC-ROC score of 1
+|     | Accuracy | Precision | Recall | ROC score | 
+| --- | --- | --- | --- | --- | 
+| 1. Model without PCA & SMOTE | 97% | 0.88| 0.57 | 0.93 | 
+| 2. Model with PCA only | 96% | 0.78 | 0.54 | 0.87 | 
+| 3. Model with SMOTE only | 100%| 1.0 | 1.0 | 1.0 |
+
 ### Logistic Regression
 |     | Accuracy | Precision | Recall | ROC score | 
 | --- | --- | --- | --- | --- | 
@@ -94,11 +98,14 @@ with high accuracy & sensitivity
 | 2. Model with PCA only | 95% | 0.5 | 0.55 | 0.96 | 
 | 3. Model with SMOTE only | 95% | 0.5 | 1.0 | 0.97 | 
 
+### Random Forest 
+|     | Accuracy | Precision | Recall | ROC score | 
+| --- | --- | --- | --- | --- | 
+| 1. Model without PCA & SMOTE | 96% | 0.5 | 0.44 | 0.55 | 
+| 2. Model with PCA only | 95% | 0.45 | 0.44 | 0.55 | 
+| 3. Model with SMOTE only | 100% | 1.0 | 1.0 | 1.0 | 
+
 # CONCLUSION
-The Custom Ensemble model with SMOTE correctly predicts the incidence of the cervical cancer
-with high accuracy & sensitivity.
+It is found that both Custom Ensemble model and Random Forest with SMOTE had 100% accuracy and high sensitivity in predicting cervical cancer through biopsy, however we believe that there may be some overfitting happening. It is recommended that some additional steps be taken like feature engineering to get a deeper look into this. The second best model was the ensemble method without PCA and SMOTE.
 
-The Logistic Regression model with SMOTE correctly predicts the incidence of the cervical cancer
-with high accuracy and sensitivity.
-
-Which model has best result?
+##Best Model: Custom Ensemble Model: Super learner Ensemble method (Base learners: Decision Tree & Bagging & XGBoost as meta learner) without PCA & SMOTE with 97% accuracy and AUC-ROC -score of 0.93.
