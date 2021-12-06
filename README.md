@@ -108,4 +108,5 @@ with high accuracy & sensitivity
 # CONCLUSION
 It is found that both Custom Ensemble model and Random Forest with SMOTE had 100% accuracy and high sensitivity in predicting cervical cancer through biopsy, however we believe that there may be some overfitting happening. It is recommended that some additional steps be taken like feature engineering to get a deeper look into this. The second best model was the ensemble method without PCA and SMOTE.
 
-##Best Model: Custom Ensemble Model: Super learner Ensemble method (Base learners: Decision Tree & Bagging & XGBoost as meta learner) without PCA & SMOTE with 97% accuracy and AUC-ROC -score of 0.93.
+## Best Model: 
+Custom Ensemble Model: Super learner Ensemble method (Base learners: Decision Tree & Bagging & XGBoost as meta learner) without PCA & SMOTE with 97% accuracy and AUC-ROC -score of 0.93.
